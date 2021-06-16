@@ -132,11 +132,11 @@ module.exports = {
                             return resolve(results);
                         }
                         else {
-                            return reject([]);
+                            return reject({ msg: "wrong credentials" });
                         }
                     });
                 } else {
-                    return reject([]);
+                    return reject({ msg: "wrong credentials" });
                 }
             });
         });
